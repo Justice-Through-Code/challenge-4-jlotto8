@@ -35,6 +35,7 @@ def box_office_data():
     # Let's use our conditional logic to check if "The Matrix" is still in `remaining_50_list`
     # Print `"The Matrix" in remaining_50_list`. It should print out `False`.
     # NOTE: Make sure to double check the list you are removing from!
+    
     remaining_50_list.remove('The Matrix')
     print('The Matrix' in remaining_50_list)
 
@@ -44,8 +45,7 @@ def box_office_data():
     # Use 'indexing' and conditional logic to check.
     # NOTE: if there are 50 movies in the list, what's the index of the final movie?
     remaining_50_list.append('Anywhere But Here')
-    print('Anywhere But Here' in remaining_50_list)
-    print(remaining_50_list[-1])
+    print('Anywhere But Here' == remaining_50_list[49])
     
 
     # 1.4 TODO: Let's make sure "remaining_50_list" has exactly 50 movie titles.
@@ -80,7 +80,7 @@ def create_employee_email_address():
 
     # 2.1 TODO: Let's save the lowercase version of the employee_name in a new variable 'lower_name'
     # (use a string method to lower the name). Print out the variable.
-    lower_name  = employee_name.lower()
+    lower_name = employee_name.lower()
     print(lower_name)
 
 
@@ -98,6 +98,6 @@ def create_employee_email_address():
     # 2.4 TODO: We want to add '@ripplemedia.com' to the end of the string inside joined_names and
     # save it in a variable `email` (use an f-string to combine the username with the email domain)
     # Print out the variable.
-    email = joined_names + '@ripplemedia.com'
+    email = (f'{joined_names}@ripplemedia.com')
     print(email)
 create_employee_email_address()
